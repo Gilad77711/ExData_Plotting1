@@ -25,7 +25,7 @@ Data$Global_reactive_power<-as.numeric(as.character(Data$Global_reactive_power))
 
 ##Plotting:
 ##Plot2
-png('plot2.jpg')
+png('plot2.png',width=480,height=480)
 plot(seq(0,2880,length.out=2880),seq(0,8,length.out=2880),type="n",xaxt="n",xlab="",ylab="Global Active Power")
 lines(Data$Global_active_power)  
 xticks <- seq(0, 2880, 1440)

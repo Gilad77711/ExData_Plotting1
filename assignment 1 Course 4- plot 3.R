@@ -25,7 +25,7 @@ Data$Global_reactive_power<-as.numeric(as.character(Data$Global_reactive_power))
 
 ##Plotting:
 ##Plot3
-png('plot3.jpg')
+png('plot3.png',width=480,height=480)
 xticks <- seq(0, 2880, 1440)
 plot(seq(0,2880,length.out=10000),seq(0,38,length.out=10000),xaxt="n",type="n",ylab="Energy sub metering",xlab="")
 lines(Data$Sub_metering_1,type="l",xaxt="n")

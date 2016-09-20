@@ -25,7 +25,7 @@ Data$Global_reactive_power<-as.numeric(as.character(Data$Global_reactive_power))
 
 ##Plotting:
 ##Plot4
-png('plot4.jpg')
+png('plot4.png',width=480,height=480)
 par(mfrow=c(2,2),mar=c(4,4,2,1),oma=c(0,0,2,0))
 plot(seq(0,2880,length.out=2880),seq(0,8,length.out=2880),type="n",xaxt="n",xlab="",ylab="Global Active Power")
 lines(Data$Global_active_power)  

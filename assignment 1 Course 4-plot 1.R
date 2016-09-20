@@ -26,6 +26,6 @@ Data$Global_reactive_power<-as.numeric(as.character(Data$Global_reactive_power))
 ##Plotting:
 
 ##Plot1
-png('plot1.jpg')
+png('plot1.png',width=480,height=480)
 hist(Data$Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)")
 dev.off()
